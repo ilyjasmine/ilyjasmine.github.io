@@ -16,18 +16,6 @@
       <div id="flipdown" class="flipdown"></div>
     </div>
 
-    <!-- Your custom FlipUp script -->
-    <script src="flipup.js"></script> <!-- renamed from flipdown.js for clarity -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // Your Unix timestamp (example: 7 December 2024)
-        const startTime = Math.floor(new Date("2024-12-07T00:00:00Z").getTime() / 1000);
 
-        new FlipUp(startTime, "flipdown", {
-          headings: ["Years", "Days", "Hours", "Minutes", "Seconds"],
-          theme: "dark"
-        });
-      });
-    </script>
   </body>
 </html>
