@@ -10,7 +10,7 @@
 .flipdown.flipdown__theme-dark .rotor-group-heading:before {
   color: #000000;
 }
-/* Delimiters */
+/* Delimeters */
 .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):before,
 .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):after {
   background-color: #151515;
@@ -43,7 +43,7 @@
 .flipdown.flipdown__theme-light .rotor-group-heading:before {
   color: #EEEEEE;
 }
-/* Delimiters */
+/* Delimeters */
 .flipdown.flipdown__theme-light .rotor-group:nth-child(n+2):nth-child(-n+3):before,
 .flipdown.flipdown__theme-light .rotor-group:nth-child(n+2):nth-child(-n+3):after {
   background-color: #DDDDDD;
@@ -70,19 +70,14 @@
 
 .flipdown {
   overflow: visible;
-  width: 800px; /* Increased width */
-  max-width: 100%;
+  width: 510px;
   height: 110px;
-  display: flex;
-  justify-content: center;
-  gap: 10px; /* Space between rotors */
 }
 
 .flipdown .rotor-group {
   position: relative;
   float: left;
-  padding-right: 40px;
-  flex-grow: 1; /* Allow groups to grow equally */
+  padding-right: 30px;
 }
 
 .flipdown .rotor-group:last-child {
@@ -135,7 +130,7 @@
 .flipdown .rotor {
   position: relative;
   float: left;
-  width: 60px; /* Increased size of rotors */
+  width: 50px;
   height: 80px;
   margin: 0px 5px 0px 0px;
   border-radius: 4px;
@@ -152,14 +147,14 @@
 .flipdown .rotor-bottom {
   overflow: hidden;
   position: absolute;
-  width: 60px; /* Increased size */
+  width: 50px;
   height: 40px;
 }
 
 .flipdown .rotor-leaf {
   z-index: 1;
   position: absolute;
-  width: 60px; /* Increased size */
+  width: 50px;
   height: 80px;
   transform-style: preserve-3d;
   transition: transform 0s;
@@ -174,8 +169,12 @@
 .flipdown .rotor-leaf-rear {
   overflow: hidden;
   position: absolute;
-  width: 60px; /* Increased size */
+  width: 50px;
   height: 40px;
+  margin: 0;
+  transform: rotateX(0deg);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .flipdown .rotor-leaf-front {
@@ -206,14 +205,15 @@
   position: absolute;
   bottom: 0px;
   left: 0px;
-  width: 60px; /* Increased size */
+  width: 50px;
   height: 40px;
   border-radius: 0px 0px 4px 4px;
 }
 
 @media (max-width: 550px) {
+
   .flipdown {
-    width: 400px;
+    width: 312px;
     height: 70px;
   }
 
@@ -229,7 +229,7 @@
   .flipdown .rotor-top,
   .flipdown .rotor-bottom,
   .flipdown .rotor:after {
-    width: 35px;
+    width: 30px;
   }
 
   .flipdown .rotor-group {
