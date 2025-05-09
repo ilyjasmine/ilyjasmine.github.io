@@ -15,17 +15,18 @@
       <p>Keeping track of time since we met</p>
       <div id="flipdown" class="flipdown"></div>
     </div>
-    <script src="flipup.js"></script> 
+    <script src="flipup.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const startTime = Math.floor(new Date("2024-12-07T00:00:00Z").getTime() / 1000);
+        const startTime = 1733603365; 
 
         new FlipUp(startTime, "flipdown", {
           headings: ["Years", "Days", "Hours", "Minutes", "Seconds"],
           theme: "dark"
         });
       });
-    </script>
+</script>
+
 
   </body>
 </html>
