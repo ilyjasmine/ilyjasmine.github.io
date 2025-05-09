@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="flipdown.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="flipdown.js"></script>
-    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
     <div class="example">
@@ -17,5 +15,19 @@
       <p>Keeping track of time since we met</p>
       <div id="flipdown" class="flipdown"></div>
     </div>
+
+    <!-- Your custom FlipUp script -->
+    <script src="flipup.js"></script> <!-- renamed from flipdown.js for clarity -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Your Unix timestamp (example: 7 December 2024)
+        const startTime = Math.floor(new Date("2024-12-07T00:00:00Z").getTime() / 1000);
+
+        new FlipUp(startTime, "flipdown", {
+          headings: ["Years", "Days", "Hours", "Minutes", "Seconds"],
+          theme: "dark"
+        });
+      });
+    </script>
   </body>
 </html>
