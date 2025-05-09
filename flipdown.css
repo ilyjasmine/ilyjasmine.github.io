@@ -107,6 +107,10 @@
   content: attr(data-before);
 }
 
+.flipdown .rotor-group:nth-child(4) .rotor-group-heading:before {
+  content: attr(data-before);
+}
+
 .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):before {
   content: '';
   position: absolute;
