@@ -146,7 +146,7 @@ class FlipUp {
     diff -= this.clockValues.m * 60;
     this.clockValues.s = Math.floor(diff);
 
-    this._updateClockValues();
+   // this._updateClockValues();
   }
 
   _updateClockValues(init = false) {
