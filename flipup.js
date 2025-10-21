@@ -11,7 +11,7 @@ function appendChildren(parent, children) {
   });
 }
 
-class FlipUp {
+//class FlipUp {
   constructor(startTimestamp, el = "flipdown", opt = {}) {
     if (typeof startTimestamp !== "number") {
       throw new Error("FlipUp: Expected a unix timestamp.");
@@ -40,7 +40,7 @@ class FlipUp {
     this.countup = setInterval(this._tick.bind(this), 1000);
   }
 
-  _getTime() {
+  //_getTime() {
     return new Date().getTime() / 1000;
   }
 
@@ -55,7 +55,7 @@ class FlipUp {
     };
   }
 
-  _setOptions() {
+ // _setOptions() {
     this.element.classList.add(`flipdown__theme-${this.opts.theme}`);
   }
 
